@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 2</title>
+    <style>
+        #header{
+            background-color: lightblue;
+            float : left;
+            text-align: center;
+            width: 100%;
+            height: 100px;
+            color: #1A2A80;
+            line-height: 100px;
+            font-size: 250%;
+
+        }
+
+        #menu{
+            background-color: #344F1F;
+            text-align: center;
+            float: center;
+            width: 100%;
+            color: #F4991A;
+            font-size: 100%;
+            height: 50%;
+        }
+
+        #l-side{
+            background-color: lightgrey;
+            float: left;
+            width: 20%;
+            height: 480px;
+            text-align: center;
+        }
+
+        #content{
+            background-color: lightyellow;
+            float: left;
+            width: 60%;
+            height: 480px;
+            text-align: left;
+        }
+        #r-side{
+            background-color: lightpink;
+            float: left;
+            width: 20%;
+            height: 480px;
+            text-align: center;
+        }
+        #footer{
+            background-color: lightcoral;
+            clear: both;
+            text-align: center;
+            width: 100%;
+            height: 50px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"> HEADER</div>
+    <div id="menu"> 
+        <a href="index.html">Home</a>
+        <a href="registrasi.html">REGISTRASI</a>
+        <a href="produk.html">PRODUK</a>  
+        <a href="member.html">MEMBER</a>
+    </div>
+    <div id="l-side"> populer </div>
+    <div id="content"> 
+        <h3 style="text-align: center;">FORM REGISTRASI</h3>
+        <table>
+            <tr>
+            <td>
+                Nama Lengkap
+            </td><td> : </td> <td><input type="text" name="nama_lengkap"></td>
+            </tr>
+            <tr>
+            <td>
+                Tanggal Lahir
+            </td><td> : </td><td><input type="date" name="tanggal_lahir"></td>
+            </tr>
+            <tr>
+            <td>
+                Jenis Kelamin
+            </td><td> : </td> <td>
+                <input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki
+                <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
+            </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Alamat
+                </td><td> : </td><td><textarea name="alamat"></textarea></td>
+            </tr>
+            <tr>
+                <td>
+                    Agama
+                </td><td> : </td><td>
+                    <select name="agama">
+                        <option value="islam">Islam</option>
+                        <option value="kristen">Kristen</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="budha">Budha</option>
+                        <option value="konghucu">Konghucu</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Hobi
+                </td><td> : </td><td>
+                    <input type="checkbox" name="hobi" value="membaca"> Membaca
+                    <input type="checkbox" name="hobi" value="menulis"> Menulis
+                    <input type="checkbox" name="hobi" value="bermain"> Bermain
+                    <input type="checkbox" name="hobi" value="berenang"> Berenang
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: center;" >
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="r-side"> advertise </div>
+    <div id="footer"> footer </div>
+</body>
+</html>
