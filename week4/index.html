@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pertemuan 3</title>
+  <style>
+    .Header {
+      background-color: purple;
+      color: white;
+      text-align: left;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    #Menu {
+      text-align: right;
+    }
+
+    #Menu a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: purple;
+      margin-top: 10px;
+      padding: 10px;
+    }
+
+    #Gambar {
+      position: relative;
+      width:100%;
+      height: 500px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    #Gambar div {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 100%;
+      background-size: cover;
+      background-position: center;
+      animation: slideGambar 6.5s infinite;
+    }
+
+    
+    #Gambar div:nth-child(1) {
+      background-image: url("asset/Awalan.jpg");
+      animation-delay: 0s;
+    }
+    #Gambar div:nth-child(2) {
+      background-image: url("asset/Awalan2.jpeg");
+      animation-delay: 2s;
+    }
+    #Gambar div:nth-child(3) {
+      background-image: url("asset/Awalan3.jpeg");
+      animation-delay: 4s;
+    }
+
+    @keyframes slideGambar {
+      0% { left: 100%; }
+      10% { left: 0; }
+      30% { left: 0; }
+      40% { left: -100%; }
+      100% { left: -100%; }
+    }
+
+    .Katalog {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .gambar-produk {
+      display: flex;
+      flex-wrap: wrap;
+      width: 700px;
+      justify-content: center;
+    }
+
+    .produk {
+      width: 150px;
+      margin: 10px;
+      background-color: white;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+
+    .produk img {
+      width: 150px;
+      height: 150px;
+      border-radius: 5px;
+    }
+
+    .produk p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    .harga {
+      color: black;
+      font-weight: bold;
+    }
+
+    #Rekomendasi {
+      margin-left: 20px;
+      text-align: center;
+      background-color: white;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+
+    #Rekomendasi img {
+      width: 220px;
+      height: 310px;
+      border-radius: 5px;
+    }
+
+    #Rekomendasi p {
+      margin-top: 8px;
+      font-weight: bold;
+    }
+
+    #Rekomendasi .harga {
+      color: black;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      #Menu {
+        text-align: center;
+      }
+
+      #Menu a {
+        display: inline-block;
+        margin: 5px;
+        padding: 8px;
+      }
+
+      .Katalog {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .gambar-produk {
+        width: 100%;
+      }
+
+      .produk {
+        width: 45%;
+        max-width: 180px;
+      }
+
+      #Rekomendasi {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 80%;
+      }
+
+      #Rekomendasi img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .produk {
+        width: 80%;
+      }
+
+      #Menu a {
+        display: block;
+        margin: 5px auto;
+      }
+
+      #Rekomendasi {
+        width: 90%;
+      }
+    }
+
+    /* Footer */ 
+    footer { 
+    background-color: #f2f2f2; 
+    margin-top: 40px; 
+    padding: 20px 0; 
+    } 
+    .footer-container { 
+    width: 90%; 
+    margin: auto; 
+    display: flex; 
+    justify-content: space-between; 
+    } 
+    .footer-box h4 { 
+    color: purple; 
+    } 
+    .footer-box a { 
+    text-decoration: none; 
+    color: #0056b3; 
+    } 
+    .footer-box a:hover { 
+    text-decoration: underline; 
+    }
+  </style>
+</head>
+<body>
+  <div class="Header">
+    <h1>TOKO ONLINE</h1>
+  </div>
+
+  <div id="Menu"> 
+    <a href="">Beranda</a>
+    <a href="">Produk</a>
+    <a href="">Member</a>
+    <a href="">Login</a>
+  </div>
+
+  <div id="Gambar">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="Katalog">
+    <div class="gambar-produk">
+      <div class="produk">
+        <img src="asset/Produk/1.jpeg">
+        <p>Produk 1</p>
+        <p class="harga">Rp 25.000</p>
+      </div>
+      <div class="produk">
+        <img src="asset/Produk/2.jpeg">
+        <p>Produk 2</p>
+        <p class="harga">Rp 30.000</p>
+      </div>
+      <div class="produk">
+        <img src="asset/Produk/3.jpeg">
+        <p>Produk 3</p>
+        <p class="harga">Rp 27.000</p>
+      </div>
+      <div class="produk">
+        <img src="asset/Produk/4.jpeg">
+        <p>Produk 4</p>
+        <p class="harga">Rp 22.000</p>
+      </div>
+      <div class="produk">
+        <img src="asset/Produk/5.jpeg">
+        <p>Produk 5</p>
+        <p class="harga">Rp 35.000</p>
+      </div>
+      <div class="produk">
+        <img src="asset/Produk/6.jpeg">
+        <p>Produk 6</p>
+        <p class="harga">Rp 29.000</p>
+      </div>
+    </div>
+
+    <div id="Rekomendasi">
+      <img src="asset/Produk/7.jpeg">
+      <p>Produk Rekomendasi</p>
+      <p class="harga">Rp 50.000</p>
+    </div>
+  </div>
+
+  <footer> 
+    <div class="footer-container"> 
+    <div class="footer-box"> 
+    <h4>QUESTIONS</h4> 
+    <p>How to buy</p> 
+    <p>Payment</p> 
+    </div> 
+
+    <div class="footer-box"> 
+        <h4>CATEGORIES</h4> 
+        <p>Batik Lengan Panjang</p> 
+        <p>Batik Lengan Pendek</p> 
+    </div> 
+    <div class="footer-box"> 
+        <h4>FOLLOW US</h4> 
+        <p><a href="#">Facebook</a></p> 
+        <p><a href="#">Twitter</a></p> 
+    </div> 
+    </div> 
+</footer> 
+</body>
+</html>
