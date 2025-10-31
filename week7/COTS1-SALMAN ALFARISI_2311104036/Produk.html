@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sportify Shoes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* ====== Banner Carousel ====== */
+    #bannerCarousel img {
+      height: auto;
+      width: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    /* Kustomisasi indikator carousel */
+    .carousel-indicators [data-bs-target] {
+    background-color: black;
+     }
+    
+    .card img{
+        height: 500px;
+        object-fit: cover;
+    }
+
+    /* ====== Background kolom rekomendasi ====== */
+    .rekomendasi-section {
+    background: #4E56C0;       
+    padding: 20px;
+    border-radius: 10px;
+    }
+
+    .rekomendasi-section h4 {
+    font-weight: bold;
+    color: #ffffff;
+    }
+
+    .rekomendasi-section .card {
+    background: #ffffff;
+    border: none;
+    }
+
+    .rekomendasi-section .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .rekomendasi-section .card {
+    margin-bottom: 15px;
+    }
+
+
+    /* Responsif untuk HP */
+    @media (max-width: 768px) {
+      #bannerCarousel img {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Sportify Shoes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="Produk.html">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- KOLOM PENCARIAN -->
+  <div class="container mt-4">
+    <input type="text" id="searchInput" class="form-control" placeholder="Cari sepatu...">
+  </div>
+
+  <!-- KONTEN DAN REKOMENDASI -->
+  <div class="container mt-4 mb-5">
+    <div class="row align-items-start">
+      <!-- KONTEN (DAFTAR PRODUK) -->
+      <div class="col-md-8">
+        <h4 class="mb-3">Daftar Produk</h4>
+        <div class="row" id="productList">
+          <div class="col-md-6 mb-4 product-card" data-name="Sportify Sprint X">
+            <div class="card h-100">
+              <img src="assets/Nike_Joyride.jpg" class="card-img-top" alt="Sportify Sprint X">
+              <div class="card-body">
+                <h5 class="card-title">NIKE JOYRIDE</h5>
+                <p class="card-text">Desain ringan untuk kecepatan maksimal.</p>
+                <a href="detail_Joyride.html" class="btn btn-primary btn-sm">Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4 product-card" data-name="Sportify Velocity Pro">
+            <div class="card h-100">
+              <img src="assets/Nike_AlphaFly3.jpg" class="card-img-top" alt="Sportify Velocity Pro">
+              <div class="card-body">
+                <h5 class="card-title">NIKE ALPHAFLY 3</h5>
+                <p class="card-text">Stabilitas dan bantalan empuk untuk maraton.</p>
+                <a href="detail_AlphaFly.html" class="btn btn-primary btn-sm">Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4 product-card" data-name="Sportify Aero Boost">
+            <div class="card h-100">
+              <img src="assets/Ortuseight_Solar.jpg" class="card-img-top" alt="Sportify Aero Boost">
+              <div class="card-body">
+                <h5 class="card-title">ORTUSEIGHT SOLAR</h5>
+                <p class="card-text">Ventilasi udara optimal untuk performa tinggi.</p>
+                <a href="detail_Ortuseight.html" class="btn btn-primary btn-sm">Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4 product-card" data-name="Sportify Trail Runner">
+            <div class="card h-100">
+              <img src="assets/Nineten_HazeVision.png" class="card-img-top" alt="Sportify Trail Runner">
+              <div class="card-body">
+                <h5 class="card-title">NINETEN HAZE VISION</h5>
+                <p class="card-text">Tapak kuat untuk medan berat.</p>
+                <a href="detail_NineTen.html" class="btn btn-primary btn-sm">Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- KOLOM REKOMENDASI -->
+    <div class="col-md-4 rekomendasi-section">
+    <h4 class="mb-3 text-center">Rekomendasi</h4>
+
+    <div class="card mb-3 shadow-sm">
+        <img src="assets/Hoka_SkywardX.jpg" class="card-img-top" alt="Sportify Ultra Flex">
+        <div class="card-body">
+        <h6 class="card-title">HOKA SKYWARD X</h6>
+        <p class="card-text">Fleksibel dan nyaman untuk latihan harian.</p>
+        <a href="detail_Hoka.html" class="btn btn-outline-primary btn-sm">Lihat Detail</a>
+        </div>
+    </div>
+
+    <div class="card mb-3 shadow-sm">
+        <img src="assets/Puma_Nitro.jpg" class="card-img-top" alt="Sportify Aero Boost">
+        <div class="card-body">
+        <h6 class="card-title">PUMA NITRO</h6>
+        <p class="card-text">Desain ringan dan breathable.</p>
+        <a href="detail_Puma.html" class="btn btn-outline-primary btn-sm">Lihat Detail</a>
+        </div>
+    </div>
+    </div>
+        
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2025 Sportify Shoes — by Salman Alfarisi (2311104036)</p>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    // Jalankan carousel otomatis
+    const myCarousel = document.querySelector('#bannerCarousel');
+    const carousel = new bootstrap.Carousel(myCarousel, {
+      interval: 2000,
+      ride: 'carousel'
+    });
+
+    // Fungsi Pencarian Produk
+    $("#searchInput").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#productList .product-card").filter(function() {
+        $(this).toggle($(this).attr("data-name").toLowerCase().indexOf(value) > -1)
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Grid Kotak</title>
+  <style>
+    body {
+      background-color: #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 180px) 240px; /* 4 kecil + 1 besar */
+      grid-template-rows: repeat(2, 150px);
+      gap: 10px;
+    }
+
+    .kotak {
+      background-color: #b51212;
+    }
+
+    /* Kotak besar di kanan */
+    .besar {
+      grid-row: span 2; /* tinggi dua baris */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="besar kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+  </div>
+</body>
+</html>

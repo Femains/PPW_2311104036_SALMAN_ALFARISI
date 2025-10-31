@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/bootstrap-5.3.8-dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <script src="./assets/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <h1>SALMAN ALFARISI</h1>
+    <div class="container-sm bg-primary">
+        <h1>Container SM</h1>
+    </div>
+
+    <div class="container-fluid bg-secondary ">
+        <h1>Containder Fluid</h1>
+
+    </div>
+
+   <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8 bg-primary text-white">.col-12 .col-md-8</div>
+            <div class="col-6 col-md-4 bg-secondary text-white">.col-6 .col-md-4</div>
+        </div>
+        <div class="row">
+                <div class="col-6 col-md-4 bg-success text-white">.col-6 .col-md-4</div>
+                <div class="col-6 col-md-4 bg-info text-white">.col-6 .col-md-4</div>
+                <div class="col-6 col-md-4 bg-warning text-white">.col-6 .col-md-4</div>
+        </div>
+            <div class="row">
+                <div class="col-6 bg-dark text-white">.col-6</div>
+                <div class="col-6 bg-light text-dark">.col-6</div>
+            </div>
+    </div>
+
+    <!-- Tabel Hover Style -->
+<table class="table table-hover">
+  <thead class="table-primary ">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nama Lengkap</th>
+      <th scope="col">Asal Kota</th>
+      <th scope="col">Umur</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-primary">
+      <th scope="row">1</th>
+      <td>Budi Rojadi</td>
+      <td>Semarang</td>
+      <td>35 th</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Yulia Santi</td>
+      <td>Bekasi</td>
+      <td>32 th</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Fahri Abdilah</td>
+      <td>Medan</td>
+      <td>38 th</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="container">
+  <h2>Thumbnail & Fluid</h2>
+  
+  <img 
+    src="https://i.pinimg.com/1200x/37/a1/1d/37a11ded7075d04ca457035c11e40e25.jpg" 
+    class="img-thumbnail" 
+    alt="Cinque Terre"
+  >
+
+  <img 
+    src="https://i.pinimg.com/1200x/37/a1/1d/37a11ded7075d04ca457035c11e40e25.jpg" 
+    class="img-fluid mt-3" 
+    alt="Responsive image"
+  >
+</div>
+
+<div class="container">
+  <h4>Button Styles</h4>
+
+  <button type="button" class="btn btn-secondary">Secondary</button>
+  <button type="button" class="btn btn-primary btn-lg">Primary</button>
+  <button type="button" class="btn btn-success w-100">Success</button>
+  <button type="button" class="btn btn-info btn-sm">Info</button>
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-link">Link</button>
+</div>
+
+<div class="container">
+  <h3>Horizontal Form</h3>
+  <form action="/action_page.php">
+    <div class="row mb-3">
+      <label for="uname" class="col-sm-1 col-form-label">Username:</label>
+      <div class="col-sm-10">
+        <input 
+          type="text" 
+          class="form-control" 
+          id="uname" 
+          name="uname" 
+          placeholder="Enter username"
+        >
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <label for="pwd" class="col-sm-1 col-form-label">Password:</label>
+      <div class="col-sm-10">
+        <input 
+          type="password" 
+          class="form-control" 
+          id="pwd" 
+          name="pwd" 
+          placeholder="Enter password"
+        >
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-10 offset-sm-2">
+        <button type="submit" class="btn btn-success">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+
+</body>
+</html>
