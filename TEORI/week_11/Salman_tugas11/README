@@ -1,0 +1,16 @@
+1. Siapkan environment: XAMPP / MAMP / LAMP. Letakkan folder Salman_tugas11 di htdocs (atau www).
+2. Import file create_users.sql ke MySQL (phpMyAdmin atau CLI). Untuk mempermudah, gunakan hash berikut untuk password 'tugas123':
+
+
+$2y$10$e0NR8b1x... (contoh) <-- Ganti dengan hash yang ada di bawah ini.
+
+
+Contoh hash (generate di PHP):
+<?php echo password_hash('tugas123', PASSWORD_DEFAULT); ?>
+
+
+3. Buka http://localhost/Salman_tugas11/index.php
+4. Login pakai username: mahasiswa ; password: tugas123
+5. Untuk membuat screenshot login: buka halaman index.php, ambil screenshot, lalu Print -> Save as PDF.
+6. Siapkan file .zip yang berisi semua file .php, create_users.sql, README.txt. Nama file zip: Salman_tugas11-nim.zip
+7. Lampirkan PDF screenshot dan zip ke pengumpulan tugas.
